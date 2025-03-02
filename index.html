@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Welcome to My Portfolio</title>
-    <meta name="description" content="This is my personal portfolio and contact page." />
-    <link rel="stylesheet" href="css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Welcome to My Portfolio</title>
+  <meta name="description" content="This is my personal portfolio and contact page." />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
-    <main>
-        <header>
-            <h1>Hi, I'm Thomas! 👋</h1>
-            <p>Welcome to my personal website.</p>
-        </header>
+  <!-- Hero Section (Full-screen, centered content) -->
+  <section class="hero">
+    <header>
+      <h1>Hi, I'm Thomas! 👋</h1>
+      <p>Welcome to my personal website.</p>
+    </header>
+  </section>
+  
+  <!-- Main Content (Requires scrolling) -->
+  <main>
+    <section>
+      <h2>Who am I?</h2>
+      <p>Learn more about me:</p>
+      <a href="about.html" class="button">About Me</a>
+    </section>
 
-            <!-- Hero Section -->
-        <section class="hero">
-          <header>
-              <h1>Hi, I'm Thomas! 👋</h1>
-              <p>Welcome to my personal website.</p>
-          </header>
-        </section>
-        
-        <section>
-            <h2>Who am I?</h2>
-            <p>Learn more about me:</p>
-            <a href="about.html" class="button">About Me</a>
-        </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
 
-        <section>
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Your Name</label>
-                <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
 
-                <label for="email">Your Email</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+  <footer>
+    <small>
+      Built with <a href="https://github.com/thb3893/thb3893.github.io">GitHub</a>
+    </small>
+  </footer>
 
-    <footer>
-        <small>
-            Built with <a href="https://github.com/thb3893/thb3893.github.io">GitHub</a>
-        </small>
-    </footer>
-
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

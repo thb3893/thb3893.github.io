@@ -27,21 +27,6 @@ main {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Buttons */
-button, .button {
-    background-color: #f7931a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover, .button:hover {
-    background-color: #d17c12;
-}
-
 /* Form Fields */
 input, textarea {
     background-color: #3a3a3c; /* Dark input fields */
@@ -64,12 +49,40 @@ footer {
 
 /* Hero section styling */
 .hero {
-    height: 100vh;            /* Full viewport height */
-    display: flex;            /* Enable flexbox */
-    flex-direction: column;   /* Stack children vertically */
-    justify-content: center;  /* Center vertically */
-    align-items: center;      /* Center horizontally */
-    background-color: #1c1c1e; /* Optional: Set a background color */
-    color: #e5e5e5;           /* Optional: Light text for contrast */
-    padding: 20px;            /* Optional: Some padding */
-}
+    height: 100vh;                /* Full viewport height */
+    display: flex;                /* Use flexbox to center content */
+    flex-direction: column;       /* Stack elements vertically */
+    justify-content: center;      /* Center vertically */
+    align-items: center;          /* Center horizontally */
+    background-color: #1c1c1e;    /* Space grey background */
+    color: #e5e5e5;               /* Light text for contrast */
+    padding: 20px;
+  }
+  
+  /* Existing button style for <button> elements */
+  button {
+    background-color: #f7931a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* New styling for .button links (e.g., the "About Me" link) */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f7931a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #d17c12;
+  }
+  
