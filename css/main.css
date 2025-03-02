@@ -1,4 +1,7 @@
+/* Dark mode theme */
 body {
+    background-color: #1c1c1e; /* Space grey */
+    color: #e5e5e5; /* Light grey text */
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -6,43 +9,55 @@ body {
     text-align: center;
 }
 
-h1 {
-    color: #f7931a;
+/* Links */
+a {
+    color: #f7931a; /* Orange highlight */
+    text-decoration: none;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+a:hover {
+    color: #ffb347; /* Lighter orange on hover */
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Section Styling */
+main {
+    background-color: #2a2a2d; /* Dark grey box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-button {
+/* Buttons */
+button, .button {
     background-color: #f7931a;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #f7931a;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
-.button:hover {
+button:hover, .button:hover {
     background-color: #d17c12;
+}
+
+/* Form Fields */
+input, textarea {
+    background-color: #3a3a3c; /* Dark input fields */
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #aaa;
 }
