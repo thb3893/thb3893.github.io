@@ -112,3 +112,35 @@ footer {
     margin: 0;
   }
   
+  /* Choose Your Path Section */
+#choose-path {
+    padding: 20px;
+    background-color: #2a2a2d;  /* A contrasting background */
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #e5e5e5;
+    text-align: center;
+  }
+  
+  /* Options Container */
+  #choose-path .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  /* Individual Option */
+  #choose-path .option {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  #choose-path .option h3 {
+    margin-bottom: 10px;
+    color: #f7931a;
+  }
+  
