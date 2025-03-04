@@ -111,6 +111,11 @@ footer {
   .workout-category p {
     margin: 0;
   }
+
+  #workout-info ul {
+    text-align: left !important;
+    margin-left: 2rem;
+  }
   
   /* Choose Your Path Section */
 #choose-path {
