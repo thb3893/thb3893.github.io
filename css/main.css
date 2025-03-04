@@ -3,8 +3,8 @@ body {
     background-color: #1c1c1e; /* Space grey */
     color: #e5e5e5; /* Light grey text */
     font-family: Inter, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: none; /* width constraint */
+    margin: 0;
     padding: 20px;
     text-align: center;
 }
