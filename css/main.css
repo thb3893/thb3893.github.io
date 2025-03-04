@@ -23,7 +23,7 @@ a:hover {
 main {
     background-color: #2a2a2d; /* Dark grey box */
     padding: 20px;
-    border-radius: 10px;
+    width: 100%;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -88,7 +88,7 @@ footer {
   
  /* Workout Information Section */
  #workout-info {
-    padding: 5px;
+    padding: 20px;
     background-color: #2a2a2d;  /* A darker background for contrast */
     margin: 20px 0;
     border-radius: 8px;
