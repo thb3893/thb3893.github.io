@@ -1,10 +1,9 @@
-/* Dark mode theme */
 body {
-    background-color: #1c1c1e; /* Space grey */
-    color: #e5e5e5; /* Light grey text */
+    background-color: #1c1c1e;
+    color: #e5e5e5;
     font-family: Inter, sans-serif;
-    max-width: 75%; /* width constraint */
-    margin: 0;
+    max-width: 75%;
+    margin: 0 auto;  /* centers the content */
     padding: 20px;
     text-align: center;
 }
