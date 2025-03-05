@@ -85,37 +85,6 @@ footer {
     background-color: #d17c12;
   }
   
- /* Workout Information Section */
- #workout-info {
-    padding: 20px;
-    background-color: #2a2a2d;  /* A darker background for contrast */
-    margin: 20px 0;
-    border-radius: 8px;
-    color: #e5e5e5;           /* Light text for readability */
-  }
-  
-  #workout-info h2 {
-    margin-bottom: 15px;
-  }
-  
-  .workout-category {
-    margin-bottom: 20px;
-  }
-  
-  .workout-category h3 {
-    margin-bottom: 5px;
-    color: #f7931a;  /* Accent color for the category titles */
-  }
-  
-  .workout-category p {
-    margin: 0;
-  }
-
-  #workout-info ul {
-    text-align: center;
-    margin-left: 2rem;
-  }
-  
   /* Choose Your Path Section */
 #choose-path {
     padding: 20px;
