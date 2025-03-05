@@ -148,8 +148,16 @@ footer {
     color: #f7931a;
   }
 
-  ul {
-    margin-left: 2rem;    /* or however much spacing you prefer */
-    padding-left: 2rem;
+  #exercises ul {
+    text-align: left !important;
+    margin-left: 2rem;
   }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem; /* or any size you prefer */
+  }
+  
+
+ 
   
