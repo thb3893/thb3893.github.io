@@ -24,6 +24,12 @@
       </p>
     </section>
 
+    <section id="exercise-of-the-day">
+        <h2>Exercise of the Day</h2>
+        <p><strong id="exercise-name"></strong></p>
+        <p id="exercise-description"></p>
+    </section>    
+
     <!-- Muscle Groups & Exercises -->
     <section id="muscle-groups">
 
@@ -116,5 +122,31 @@
   </footer>
   
   <script src="js/main.js"></script>
+
+  <script>
+    const exercises = [
+        { name: "Bench Press", description: "A compound movement for building chest strength." },
+        { name: "Pull-ups", description: "Excellent for back and biceps development." },
+        { name: "Squats", description: "One of the best leg exercises for strength and stability." },
+        { name: "Plank", description: "A core stability exercise for endurance and posture." },
+        { name: "Deadlifts", description: "An essential full-body strength exercise." },
+        { name: "Overhead Press", description: "Great for shoulder strength and posture." },
+        { name: "Russian Twists", description: "Targets your obliques for core definition." }
+    ];
+    
+    function getExerciseOfTheDay() {
+        const today = new Date().getDate(); // Use the date to keep it the same throughout the day
+        const index = today % exercises.length;
+        return exercises[index];
+    }
+    
+    // Insert Exercise of the Day into HTML
+    window.onload = function() {
+        const exercise = getExerciseOfTheDay();
+        document.getElementById("exercise-name").textContent = exercise.name;
+        document.getElementById("exercise-description").textContent = exercise.description;
+    };
+    </script>
+    
 </body>
 </html>
