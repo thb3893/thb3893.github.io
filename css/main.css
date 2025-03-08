@@ -4,13 +4,47 @@ body {
     color: #e5e5e5;
     font-family: Inter, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Titles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f7931a;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f7931a;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+/* General Styles */
+body {
+    background-color: #1c1c1e;
+    color: #e5e5e5;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Titles */
@@ -31,60 +65,56 @@ h2 {
 /* Hero Section */
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    background-color: #2a2a2d;
+    height: 50vh;
     text-align: center;
-    padding: 20px;
 }
 
-.hero-content h1 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #f7931a;
+/* Choose Your Path Section */
+#choose-path {
+    margin: 50px auto;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    color: #bbb;
-}
-
-/* Feature Sections */
-.feature-section {
+.cards-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 50px 20px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.feature-card {
+.card {
     background-color: #2a2a2d;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.2);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
     width: 300px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.feature-card:hover {
+.card:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
 }
 
-.feature-card h2 {
-    font-size: 1.8rem;
+.card h3 {
     color: #f7931a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.feature-card p {
+.card p {
     font-size: 1rem;
     color: #bbb;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.feature-card .button {
+/* Buttons */
+.button {
     display: inline-block;
     padding: 10px 20px;
+    margin-top: 10px;
     background-color: #f7931a;
     color: white;
     text-decoration: none;
@@ -93,65 +123,58 @@ h2 {
     transition: background-color 0.3s;
 }
 
-.feature-card .button:hover {
+.button:hover {
     background-color: #d17c12;
 }
 
 /* Contact Section */
-#contact {
+#contact-info {
     background-color: #2a2a2d;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     margin-top: 40px;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
 }
 
-.contact-content h2 {
-    font-size: 2rem;
-    color: #f7931a;
-    margin-bottom: 10px;
-}
-
-.contact-content p {
-    font-size: 1.1rem;
-    color: #bbb;
-    margin-bottom: 20px;
-}
-
-#contact form {
+#contact-info form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
 
-#contact input,
-#contact textarea {
+#contact-info label {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #f7931a;
+}
+
+#contact-info input,
+#contact-info textarea {
     background-color: #3a3a3c;
     color: white;
     border: 1px solid #555;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     width: 80%;
+    margin-top: 5px;
 }
 
-#contact input::placeholder,
-#contact textarea::placeholder {
+#contact-info input::placeholder,
+#contact-info textarea::placeholder {
     color: #bbb;
 }
 
-#contact button {
+#contact-info button {
     background-color: #f7931a;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 50%;
-    font-size: 1rem;
+    margin-top: 20px;
 }
 
-#contact button:hover {
+#contact-info button:hover {
     background-color: #d17c12;
 }
 
@@ -160,7 +183,97 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
     color: #aaa;
+}
+
+footer a {
+    color: #f7931a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffb347;
+}
+
+/* Exercise of the Day */
+#exercise-of-the-day {
+    background-color: #2a2a2d;
     padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+}
+
+#exercise-of-the-day p {
+    font-size: 1.2rem;
+}
+
+/* Exercise Grid */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Exercise Cards */
+.exercise-card {
+    background-color: #2a2a2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.exercise-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+}
+
+.exercise-card h3 {
+    color: #f7931a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.exercise-card p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.exercise-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.exercise-card li {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #e5e5e5;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f7931a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d17c12;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
 }
 
 footer a {
